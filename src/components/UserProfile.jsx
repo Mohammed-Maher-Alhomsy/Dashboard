@@ -28,10 +28,7 @@ const UserProfile = () => {
           alt="user-profile"
         />
         <div>
-          <p className="font-semibold text-xl dark:text-gray-200">
-            {" "}
-            Michael Roberts{" "}
-          </p>
+          <p className="font-semibold text-xl dark:text-gray-200"> Maher </p>
           <p className="text-gray-500 text-sm dark:text-gray-400">
             {" "}
             Administrator{" "}
