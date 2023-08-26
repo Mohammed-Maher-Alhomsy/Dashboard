@@ -39,8 +39,17 @@ const App = () => {
   } = useStateContext();
 
   useEffect(() => {
-    localStorage.setItem("color", currentColor);
-    localStorage.setItem("mode", currentMode);
+    localStorage.setItem(
+      "color",
+      localStorage.getItem("color")
+        ? localStorage.getItem("color")
+        : currentColor
+    );
+
+    localStorage.setItem(
+      "mode",
+      localStorage.getItem("mode") ? localStorage.getItem("mode") : currentMode
+    );
 
     setColor(localStorage.getItem("color"));
     setCurrentMode(localStorage.getItem("mode"));
